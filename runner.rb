@@ -1,0 +1,3 @@
+require_relative 'batch/btcnode_with_explorer_diff_display_batch'
+batch = BtcnodeWithExplorerDiffDisplayBatch.new
+batch.perform

@@ -11,7 +11,7 @@ class BtcnodeWithExplorerDiffDisplayBatch
 
     if is_diff_or_more_3(btc_block_num, explorer_block_num) then
       message_service = MessagingService.new
-      message = "bitcondとexplorerの差分の±3 block以上のDiffあります"
+      message = "bitcondとexplorerの差分の±3 block以上のDiffがあります"
       message_service.send(message)
     end
 

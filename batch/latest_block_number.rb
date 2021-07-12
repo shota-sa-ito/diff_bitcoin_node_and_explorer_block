@@ -1,10 +1,12 @@
 require 'net/http'
 require 'json'
+require_relative './bitcoinrpc'
 
 class BitcoindLatestBlockNumber
     def get_block_number
-        # response = JSON.parse(`bitcoin-cli getblockcount`)
-        return 0
+        client = BitcoinRPC.new('http://ss:ss@bitcoind-node:8332')
+        result = client.getblockcount
+        return result
     end
 end
 

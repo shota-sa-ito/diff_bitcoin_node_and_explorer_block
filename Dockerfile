@@ -17,7 +17,7 @@ ENV LANG C.UTF-8
 COPY . .
 
 # slackの接続先
-ENV SLACK_WEBHOOK_URL "https://hooks.slack.com/services/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"
+ENV SLACK_WEBHOOK_URL "https://hooks.slack.com/services/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"
 
 # crondの設定
 COPY crontab /var/spool/cron/crontabs/root
